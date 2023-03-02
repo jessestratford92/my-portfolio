@@ -4,7 +4,7 @@ import ParticleField from "./ParticleField";
 const Portfolio: React.FC = () => {
   return (
     <div>
-      <ParticleField particleCount={1000} particleSize={20} color={"red"} />
+      <ParticleField particleCount={100000} particleSize={1} color={"green"} />
     </div>
   );
 };

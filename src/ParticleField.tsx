@@ -61,11 +61,23 @@ const ParticleField: React.FC<Props> = ({
 
     // Add camera controls
     const controls = new OrbitControls(camera, renderer.domElement);
-    camera.position.z = 5;
+    camera.position.z = 500;
 
-    // Render the scene
+    // Render the scene and animate the particles
+    let time = 0;
     function animate() {
       requestAnimationFrame(animate);
+
+      time += 0.01;
+      for (let i = 0; i < positions.length; i += 3) {
+        const radius = Math.sqrt(positions[i] ** 2 + positions[i + 1] ** 2);
+        const angle = Math.atan2(positions[i + 1], positions[i]);
+        const speed = 0.01 * (1 - radius / 400);
+        positions[i] = radius * Math.cos(angle + time * speed);
+        positions[i + 1] = radius * Math.sin(angle + time * speed);
+      }
+      geometry.setAttribute("position", new THREE.BufferAttribute(positions, 3));
+
       renderer.render(scene, camera);
     }
     animate();

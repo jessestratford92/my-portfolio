@@ -1,31 +1,12 @@
-import React, { useRef } from "react";
-import { Canvas, useFrame } from "react-three-fiber";
-import * as THREE from "three";
+import React from "react";
+import ParticleField from "./ParticleField";
 
-function Box() {
-  const mesh = useRef<THREE.Mesh>(null!);
-  useFrame(() => {
-    if (mesh.current) {
-      mesh.current.rotation.x += 0.01;
-      mesh.current.rotation.y += 0.01;
-    }
-  });
+const Portfolio: React.FC = () => {
   return (
-    <mesh ref={mesh}>
-      <boxBufferGeometry args={[1, 1, 1]} />
-      <meshStandardMaterial color="orange" />
-    </mesh>
+    <div>
+      <ParticleField particleCount={1000} particleSize={20} color={"red"} />
+    </div>
   );
-}
-
-function Portfolio() {
-  return (
-    <Canvas>
-      <ambientLight intensity={0.5} />
-      <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} />
-      <Box />
-    </Canvas>
-  );
-}
+};
 
 export default Portfolio;

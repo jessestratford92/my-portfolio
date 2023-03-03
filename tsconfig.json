@@ -21,6 +21,10 @@
     "jsx": "react-jsx"
   },
   "include": [
-    "src"
-  ]
+    "src",
+    "src/**/*.ts",
+    "tests/**/*.ts",
+    "src/**/*.mp3",
+  ],
+  "exclude": ["node_modules", ".vscode"]
 }

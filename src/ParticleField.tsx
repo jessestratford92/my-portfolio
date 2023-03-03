@@ -72,7 +72,7 @@ const ParticleField: React.FC<Props> = ({
       for (let i = 0; i < positions.length; i += 3) {
         const radius = Math.sqrt(positions[i] ** 2 + positions[i + 1] ** 2);
         const angle = Math.atan2(positions[i + 1], positions[i]);
-        const speed = 0.01 * (1 - radius / 400);
+        const speed = 0.001 * (1 - radius / 1);
         positions[i] = radius * Math.cos(angle + time * speed);
         positions[i + 1] = radius * Math.sin(angle + time * speed);
       }

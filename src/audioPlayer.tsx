@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactAudioPlayer from 'react-audio-player';
+import ParticleField from './ParticleField';
 
 const Music = require('./assets/music/NilsFrahm_Says.mp3')
 
@@ -13,7 +14,14 @@ function handlePause() {
 
 const AudioPlayer: React.FC = () => {
   return (
-    <div>
+    <div className="main-audio-player">
+        <div className="album-artwork">
+            <ParticleField particleCount={1000} particleSize={1} color={'white'}/>
+        </div>
+        <div className="song-info">
+        <h1 className="song-title">Nils Frahm</h1>
+        <h1 className="artist-name">Says</h1>
+      </div>
       <ReactAudioPlayer
         src={Music}
         autoPlay

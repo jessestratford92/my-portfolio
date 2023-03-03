@@ -1,5 +1,4 @@
 import React from "react";
-import ParticleField from "./ParticleField";
 import AudioPlayer from "./audioPlayer";
 import './styles/index.css';
 import './styles/audioPlayer.css'

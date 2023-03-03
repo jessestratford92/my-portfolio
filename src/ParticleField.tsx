@@ -1,6 +1,6 @@
 import React, { useRef, useEffect } from "react";
 import * as THREE from "three";
-import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
+// import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
 
 interface Props {
   particleCount: number;
@@ -60,8 +60,8 @@ const ParticleField: React.FC<Props> = ({
     scene.add(directionalLight);
 
     // Add camera controls
-    const controls = new OrbitControls(camera, renderer.domElement);
-    camera.position.z = 500;
+    // const controls = new OrbitControls(camera, renderer.domElement);
+    // camera.position.z = 500;
 
     // Render the scene and animate the particles
     let time = 0;

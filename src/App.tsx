@@ -1,4 +1,5 @@
 import Portfolio from './portfolio';
+import './styles/index.css';
 
 function App() {
   return (

@@ -27,9 +27,9 @@ const AudioPlayer: React.FC = () => {
       <div className="main-audio-player">
         <div className="animationBox">
           {showNewParticleFeild ? (
-            <Sphere width={800} height={600} />
-          ) : (
             <Sphere2 width={800} height={600} />
+          ) : (
+            <Sphere width={800} height={600} />
           )}
         </div>
         <div className="song-info">

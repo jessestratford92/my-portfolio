@@ -18,7 +18,7 @@ const Sphere: React.FC<SphereProps> = ({ width, height }) => {
 
     // Create the camera
     const camera = new THREE.PerspectiveCamera(75, width / height, 0.1, 100);
-    camera.position.z = 2;
+    camera.position.z = 1.7;
 
     // Create the scene
     const scene = new THREE.Scene();
@@ -53,7 +53,7 @@ const Sphere: React.FC<SphereProps> = ({ width, height }) => {
     scene.add(pointLight2);
 
     const cameraLight = new THREE.PointLight(0xffffff, 0.5);
-    cameraLight.intensity = 100;
+    cameraLight.intensity = 300;
     camera.add(cameraLight);
     scene.add(camera);
 

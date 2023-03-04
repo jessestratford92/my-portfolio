@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import ReactAudioPlayer from 'react-audio-player';
-import ParticleField from './ParticleField';
 import Sphere from './sphere'
+import NewParticleField from './newParticleField';
 
 const Music = require('./assets/music/NilsFrahm_Says.mp3')
 
@@ -15,11 +15,11 @@ function handlePause() {
 
 const AudioPlayer: React.FC = () => {
 
-  const [showParticleFeild, setShowParticleFeild] = useState(true);
   const [showSphere, setShowSphere] = useState(false);
+  const [showNewParticleFeild, setShowNewParticleFeild] = useState(true);
 
   const toggleComponent = () => {
-    setShowParticleFeild(!showParticleFeild);
+    setShowNewParticleFeild(!showNewParticleFeild);
     setShowSphere(!showSphere);
 
   };
@@ -27,7 +27,7 @@ const AudioPlayer: React.FC = () => {
     <div className="smartphone">
       <div className="main-audio-player">
           <div className="album-artwork">
-          {showParticleFeild ? <ParticleField particleCount={1000} particleSize={1} color={'white'}/> : <Sphere width={800} height={600}/>}
+          {showNewParticleFeild ? <NewParticleField/> : <Sphere width={800} height={600}/>}
           </div>
             <div className="song-info">
               <h1 className="song-title">Nils Frahm</h1>
@@ -45,7 +45,7 @@ const AudioPlayer: React.FC = () => {
         <div className="container">
               <div className="center">
                  <button onClick={toggleComponent}>
-                    <span className="change-artwork">CHANGE ALBUM ARTWORK</span>
+                    <span className="change-artwork">ANIMATE</span>
                   </button>
           </div>
         </div>

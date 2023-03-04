@@ -38,6 +38,11 @@ h1 {
     color: rgb(65, 65, 65);
     font-family: 'Gloock', sans-serif;
   }
+
+  .change-artwork {
+    color: rgb(255, 255, 255);
+    font-family: 'Gloock', sans-serif;
+  }
   
   .artist-name {
     color: rgb(65, 65, 65);
@@ -45,18 +50,18 @@ h1 {
     font-family: 'Gloock', sans-serif;
   }
 
-  /* The device with borders */
-.smartphone {
-  margin: 0;
-  position: relative;
-  align-items: center;
-  width: 360px;
-  height: 640px;
-  margin: auto;
-  border: 16px black solid;
-  border-top-width: 60px;
-  border-bottom-width: 60px;
-  border-radius: 36px;
+/* The device with borders */
+  .smartphone {
+   margin: 0;
+   position: relative;
+   align-items: center;
+   width: 360px;
+   height: 640px;
+   margin: auto;
+   border: 16px black solid;
+   border-top-width: 60px;
+   border-bottom-width: 60px;
+   border-radius: 36px;
 }
 
   .smartphone:before {
@@ -95,3 +100,19 @@ h1 {
   height: 100px;
 }
 
+/* Button Styling and Animation TODO */
+
+button {
+  background-color: #333; /* Set the background color */
+  border-radius: 5%;
+  border: none; /* Remove the border */
+  color: #fff; /* Set the text color */
+  padding: 10px 20px; /* Add some padding */
+  font-size: 16px; /* Set the font size */
+  border-radius: 4px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Add a slight glow */
+}
+
+button:hover {
+  box-shadow: 0px 4px 8px rgba(93, 93, 93, 0.2); /* Increase the glow on hover */
+}

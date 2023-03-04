@@ -1,6 +1,6 @@
 import React from "react";
 import AudioPlayer from "./audioPlayer";
-import './styles/index.css';
+import "./styles/index.css";
 
 const Portfolio: React.FC = () => {
   return (

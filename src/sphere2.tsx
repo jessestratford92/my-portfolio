@@ -4,12 +4,12 @@ import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
 
 import normalMapTexture from "./assets/Stylized_Fur_002_normal.jpg";
 
-interface SphereProps {
+interface Sphere2Props {
   width: number;
   height: number;
 }
 
-const Sphere: React.FC<SphereProps> = ({ width, height }) => {
+const Sphere2: React.FC<Sphere2Props> = ({ width, height }) => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
 
   useEffect(() => {
@@ -18,7 +18,9 @@ const Sphere: React.FC<SphereProps> = ({ width, height }) => {
 
     // Create the camera
     const camera = new THREE.PerspectiveCamera(75, width / height, 0.1, 100);
-    camera.position.z = 2;
+    camera.position.set(0, 10, 0);
+    camera.zoom = 10; // adjust the zoom level
+    camera.updateProjectionMatrix();
 
     // Create the scene
     const scene = new THREE.Scene();
@@ -75,4 +77,4 @@ const Sphere: React.FC<SphereProps> = ({ width, height }) => {
   return <canvas ref={canvasRef} width={width} height={height} />;
 };
 
-export default Sphere;
+export default Sphere2;

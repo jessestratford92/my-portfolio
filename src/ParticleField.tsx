@@ -76,7 +76,10 @@ const ParticleField: React.FC<Props> = ({
         positions[i] = radius * Math.cos(angle + time * speed);
         positions[i + 1] = radius * Math.sin(angle + time * speed);
       }
-      geometry.setAttribute("position", new THREE.BufferAttribute(positions, 3));
+      geometry.setAttribute(
+        "position",
+        new THREE.BufferAttribute(positions, 3)
+      );
 
       renderer.render(scene, camera);
     }

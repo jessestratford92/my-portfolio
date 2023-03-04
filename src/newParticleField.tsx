@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import * as THREE from 'three';
+import React, { Component } from "react";
+import * as THREE from "three";
 
 interface Props {}
 interface State {
@@ -57,11 +57,9 @@ class NewParticleField extends Component<Props, State> {
     }
 
     particleGeometry.setAttribute(
-      'position',
+      "position",
       new THREE.BufferAttribute(vertices, 3)
     );
-
-    
 
     const particleMaterial = new THREE.PointsMaterial({ color: 0xffffff });
     this.particleSystem = new THREE.Points(particleGeometry, particleMaterial);
@@ -70,32 +68,32 @@ class NewParticleField extends Component<Props, State> {
     // Start the animation loop
     this.animate();
   }
-  
+
   animate = () => {
     requestAnimationFrame(this.animate);
-  
+
     // Update the position of the particles
-    const particleGeometry = this.particleSystem.geometry as THREE.BufferGeometry;
-    const positionAttribute = particleGeometry.getAttribute('position');
-  
+    const particleGeometry = this.particleSystem
+      .geometry as THREE.BufferGeometry;
+    const positionAttribute = particleGeometry.getAttribute("position");
+
     // Cast the attribute to the correct type to access the `array` property
-    const vertices = (positionAttribute as THREE.BufferAttribute).array as Float32Array;
-  
+    const vertices = (positionAttribute as THREE.BufferAttribute)
+      .array as Float32Array;
+
     for (let i = 0; i < vertices.length; i += 3) {
       vertices[i + 1] -= 1;
-  
+
       if (vertices[i + 1] < -500) {
         vertices[i + 1] = 500;
       }
     }
-  
+
     positionAttribute.needsUpdate = true;
-  
+
     // Render the scene
     this.renderer.render(this.state.scene, this.camera);
   };
-  
-      
 
   render() {
     return (

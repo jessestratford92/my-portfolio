@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/my-portfolio/static/css/main.7454430c.css",
-    "main.js": "/my-portfolio/static/js/main.85eb258c.js",
+    "main.css": "/my-portfolio/static/css/main.3260d465.css",
+    "main.js": "/my-portfolio/static/js/main.d97f199d.js",
     "static/js/787.128fc6e9.chunk.js": "/my-portfolio/static/js/787.128fc6e9.chunk.js",
     "static/media/NilsFrahm_Says.mp3": "/my-portfolio/static/media/NilsFrahm_Says.5dbb52a87b17d4eea281.mp3",
     "static/media/Stylized_Fur_002_normal.jpg": "/my-portfolio/static/media/Stylized_Fur_002_normal.8b2d574fb3a060020afa.jpg",
     "index.html": "/my-portfolio/index.html",
-    "main.7454430c.css.map": "/my-portfolio/static/css/main.7454430c.css.map",
-    "main.85eb258c.js.map": "/my-portfolio/static/js/main.85eb258c.js.map",
+    "main.3260d465.css.map": "/my-portfolio/static/css/main.3260d465.css.map",
+    "main.d97f199d.js.map": "/my-portfolio/static/js/main.d97f199d.js.map",
     "787.128fc6e9.chunk.js.map": "/my-portfolio/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7454430c.css",
-    "static/js/main.85eb258c.js"
+    "static/css/main.3260d465.css",
+    "static/js/main.d97f199d.js"
   ]
 }

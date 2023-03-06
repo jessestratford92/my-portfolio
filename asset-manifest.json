@@ -1,17 +1,22 @@
 {
   "files": {
-    "main.css": "/my-portfolio/static/css/main.3260d465.css",
-    "main.js": "/my-portfolio/static/js/main.d97f199d.js",
+    "main.css": "/my-portfolio/static/css/main.d08a8e45.css",
+    "main.js": "/my-portfolio/static/js/main.58e05a89.js",
     "static/js/787.128fc6e9.chunk.js": "/my-portfolio/static/js/787.128fc6e9.chunk.js",
-    "static/media/NilsFrahm_Says.mp3": "/my-portfolio/static/media/NilsFrahm_Says.5dbb52a87b17d4eea281.mp3",
+    "static/media/Rival_Consoles _Untravel.mp3": "/my-portfolio/static/media/Rival_Consoles _Untravel.63aad1385870e3d424b9.mp3",
     "static/media/Stylized_Fur_002_normal.jpg": "/my-portfolio/static/media/Stylized_Fur_002_normal.8b2d574fb3a060020afa.jpg",
     "index.html": "/my-portfolio/index.html",
-    "main.3260d465.css.map": "/my-portfolio/static/css/main.3260d465.css.map",
-    "main.d97f199d.js.map": "/my-portfolio/static/js/main.d97f199d.js.map",
+    "static/media/wave-5.svg": "/my-portfolio/static/media/wave-5.362aa31be4c9ee8a78d5ebf9838480c9.svg",
+    "static/media/wave-1.svg": "/my-portfolio/static/media/wave-1.76586a9f709dcbae30547a96424ab427.svg",
+    "static/media/wave-3.svg": "/my-portfolio/static/media/wave-3.fde7a620e85891fe26c6c118b9971057.svg",
+    "static/media/wave-4.svg": "/my-portfolio/static/media/wave-4.bf5e743e776d3f134052ece2f34268cb.svg",
+    "static/media/wave-2.svg": "/my-portfolio/static/media/wave-2.4ee65d21303fd195134495cc47ad3941.svg",
+    "main.d08a8e45.css.map": "/my-portfolio/static/css/main.d08a8e45.css.map",
+    "main.58e05a89.js.map": "/my-portfolio/static/js/main.58e05a89.js.map",
     "787.128fc6e9.chunk.js.map": "/my-portfolio/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3260d465.css",
-    "static/js/main.d97f199d.js"
+    "static/css/main.d08a8e45.css",
+    "static/js/main.58e05a89.js"
   ]
 }

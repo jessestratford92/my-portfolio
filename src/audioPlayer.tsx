@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import ReactAudioPlayer from "react-audio-player";
 import Sphere from "./sphere";
 import Sphere2 from "./sphere2";
-import NewParticleField from "./newParticleField";
 
-const Music = require("./assets/music/NilsFrahm_Says.mp3");
+// const Music_1 = require("./assets/music/NilsFrahm_Says.mp3");
+const Music_2 = require("./assets/music/Rival_Consoles _Untravel.mp3");
 
 function handlePlay() {
   console.log("The song is playing");
@@ -15,29 +15,31 @@ function handlePause() {
 }
 
 const AudioPlayer: React.FC = () => {
-  const [showSphere, setShowSphere] = useState(false);
-  const [showNewParticleFeild, setShowNewParticleFeild] = useState(true);
+  // Sphere Animations States
+  const [showSphere, setShowSphere] = useState(true);
 
+  // Toggle between two Animations
   const toggleComponent = () => {
-    setShowNewParticleFeild(!showNewParticleFeild);
     setShowSphere(!showSphere);
   };
+
   return (
     <div className="smartphone">
       <div className="main-audio-player">
         <div className="animationBox">
-          {showNewParticleFeild ? (
+          {showSphere ? (
             <Sphere2 width={800} height={600} />
           ) : (
             <Sphere width={800} height={600} />
           )}
         </div>
         <div className="song-info">
-          <h1 className="song-title">Nils Frahm</h1>
-          <h1 className="artist-name">Says</h1>
+          <h1 className="song-title">Rival Consols</h1>
+          <h1 className="artist-name">Untravel</h1>
         </div>
         <ReactAudioPlayer
-          src={Music}
+          className="audio-player-actual"
+          src={Music_2}
           autoPlay
           controls
           onPlay={handlePlay}

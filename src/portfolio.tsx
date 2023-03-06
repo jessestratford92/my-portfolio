@@ -17,10 +17,12 @@ const Portfolio: React.FC = () => {
         <img src={wave_3.default} />
         <img src={wave_4.default} />
         <img src={wave_5.default} id="shape" />
-        <h1>JESSE STRATFORD</h1>
+        <h1>Jesse Stratford</h1>
         <h2>Creative Software Engineer</h2>
       </header>
-      <AudioPlayer />
+      <div id="audioPlayer">
+        <AudioPlayer />
+      </div>
     </div>
   );
 };

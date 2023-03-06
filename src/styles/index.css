@@ -1,3 +1,10 @@
+@font-face {
+  font-family: "fashionableregular";
+  src: url("fashionableregular-zvogz-webfont.woff") format("woff"),
+    url("fashionableregular-zvogz-webfont.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
 body {
   margin: 0;
   padding: 0;
@@ -6,6 +13,11 @@ body {
 
 .parentDiv {
   position: relative;
+}
+
+.h1 {
+  align-content: center;
+  justify-content: center;
 }
 
 .bodySphere {
@@ -18,14 +30,6 @@ body {
   object-fit: cover;
   overflow: hidden;
   margin: 0;
-}
-
-h1 {
-  align-content: center;
-  color: rgb(172, 172, 172);
-  text-align: center;
-  font-family: "Julius Sans One", sans-serif;
-  letter-spacing: 0.2rem;
 }
 
 .animationBox {
@@ -66,29 +70,31 @@ h1 {
 
 .song-title {
   color: rgb(29, 29, 29);
-  font-family: "Julius Sans One", sans-serif;
+  font-family: "Cormorant Garamond", serif;
   letter-spacing: 0.2rem;
 }
 
 .change-artwork {
   color: rgb(29, 29, 29);
   transition: color 1s;
-  font-family: "Julius Sans One", sans-serif;
+  font-family: "Cormorant Garamond", serif;
   letter-spacing: 0.2rem;
 }
 
 .change-artwork:hover {
   color: rgb(255, 254, 254);
   transition: color 1s;
-  font-family: "Julius Sans One", sans-serif;
+  font-family: "Cormorant Garamond", serif;
   letter-spacing: 0.2rem;
 }
 
 .artist-name {
   color: rgb(29, 29, 29);
   font-size: 15px;
-  font-family: "Julius Sans One", sans-serif;
+  font-family: "Cormorant Garamond", serif;
   letter-spacing: 0.2rem;
+  align-items: center;
+  align-content: center;
 }
 
 /* The device with borders */
@@ -221,20 +227,20 @@ header img:nth-child(4) {
 }
 header h1 {
   width: 100%;
-  font-family: "Julius Sans One", sans-serif;
+  font-family: "fashionableregular";
   letter-spacing: 0.2rem;
   position: absolute;
   transform: translate(-50%, -50%);
   left: 50%;
   top: 20%;
-  font-size: 8vmin;
+  font-size: 10vmin;
   text-align: center;
   color: rgb(255, 255, 255);
 }
 
 header h2 {
   width: 100%;
-  font-family: "Julius Sans One", sans-serif;
+  font-family: "fashionableregular";
   letter-spacing: 0.2rem;
   position: absolute;
   transform: translate(-50%, -50%);
@@ -243,4 +249,27 @@ header h2 {
   font-size: 8vmin;
   text-align: center;
   color: rgb(255, 255, 255);
+}
+
+/* arrowDown */
+
+.arrow-down {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  background: transparent;
+  transform: translate(-50%, -50%);
+  display: block;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #fff;
+}
+
+.arrow-down:hover {
+  border-top: 10px solid rgba(255, 255, 255, 0.8);
+  border-bottom: none;
+  background: transparent;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
 }

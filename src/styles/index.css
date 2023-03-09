@@ -5,11 +5,37 @@
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: "porao_grottescheregular";
+  src: url("porao-grottesche-webfont.woff2") format("woff2"),
+    url("porao-grottesche-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   margin: 0;
   padding: 0;
   background-color: rgb(255, 255, 255);
 }
+
+#backgroundImage {
+  background-image: URL("/src/assets/aluminum-foil-background.jpg");
+  background-size: cover;
+}
+
+#menuButton {
+  background: transparent;
+  border: none;
+  color: rgb(255, 0, 0);
+  font-size: 2rem;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  cursor: pointer;
+}
+
 
 .parentDiv {
   position: relative;
@@ -170,7 +196,7 @@ button:hover {
 
 header {
   height: 100vh;
-  background-color: #000000;
+  /* background-color: #000000; */
   position: relative;
   overflow: hidden;
 }
@@ -226,20 +252,20 @@ header img:nth-child(4) {
 }
 header h1 {
   width: 100%;
-  font-family: "fashionableregular";
-  letter-spacing: 0.2rem;
+  font-family: "porao_grottescheregular";
+  letter-spacing: 0.9rem;
   position: absolute;
   transform: translate(-50%, -50%);
   left: 50%;
   top: 20%;
-  font-size: 8vmin;
+  font-size: 50vmin;
   text-align: center;
-  color: rgb(255, 255, 255);
+  color: rgb(252, 0, 0);
 }
 
 header h2 {
   width: 100%;
-  font-family: "fashionableregular";
+  font-family: "porao_grottescheregular";
   letter-spacing: 0.2rem;
   position: absolute;
   transform: translate(-50%, -50%);

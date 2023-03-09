@@ -2,7 +2,7 @@ import React, { useRef, useEffect } from "react";
 import * as THREE from "three";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
 
-import normalMapTexture from "./assets/Stylized_Fur_002_normal.jpg";
+import normalMapTexture from "./assets/NormalMap.png";
 
 interface SphereProps {
   width: number;

@@ -1,24 +1,28 @@
 {
   "files": {
-    "main.css": "/my-portfolio/static/css/main.f156d5a3.css",
-    "main.js": "/my-portfolio/static/js/main.de97d6f1.js",
+    "main.css": "/my-portfolio/static/css/main.e2c264e0.css",
+    "main.js": "/my-portfolio/static/js/main.19af45f6.js",
     "static/js/787.128fc6e9.chunk.js": "/my-portfolio/static/js/787.128fc6e9.chunk.js",
-    "static/media/Rival_Consoles _Untravel.mp3": "/my-portfolio/static/media/Rival_Consoles _Untravel.63aad1385870e3d424b9.mp3",
+    "static/media/The_Veil_LANCE.wav": "/my-portfolio/static/media/The_Veil_LANCE.4dca1ea6e27ec012aefc.wav",
+    "static/media/NormalMap.png": "/my-portfolio/static/media/NormalMap.a3bfa5bb5c0bba92ac45.png",
     "static/media/Stylized_Fur_002_normal.jpg": "/my-portfolio/static/media/Stylized_Fur_002_normal.8b2d574fb3a060020afa.jpg",
-    "static/media/fashionableregular-zvogz-webfont.woff": "/my-portfolio/static/media/fashionableregular-zvogz-webfont.99938e168af42b415c8d.woff",
-    "static/media/fashionableregular-zvogz-webfont.woff2": "/my-portfolio/static/media/fashionableregular-zvogz-webfont.7af192028766ea9d983c.woff2",
+    "static/media/moldyen-webfont.woff": "/my-portfolio/static/media/moldyen-webfont.c4e903c7ac71b64dfac6.woff",
+    "static/media/moldyen-webfont.woff2": "/my-portfolio/static/media/moldyen-webfont.8b6b20f6ec2adc620d4f.woff2",
+    "static/media/theneue-black-webfont.woff": "/my-portfolio/static/media/theneue-black-webfont.c142a0f9b60148a4ffad.woff",
+    "static/media/backdrop_mono.jpeg": "/my-portfolio/static/media/backdrop_mono.44d0aa1ed403b1df26ce.jpeg",
+    "static/media/theneue-black-webfont.woff2": "/my-portfolio/static/media/theneue-black-webfont.39e6ab4fc486272ee8ab.woff2",
     "index.html": "/my-portfolio/index.html",
     "static/media/wave-5.svg": "/my-portfolio/static/media/wave-5.362aa31be4c9ee8a78d5ebf9838480c9.svg",
     "static/media/wave-1.svg": "/my-portfolio/static/media/wave-1.76586a9f709dcbae30547a96424ab427.svg",
     "static/media/wave-3.svg": "/my-portfolio/static/media/wave-3.fde7a620e85891fe26c6c118b9971057.svg",
     "static/media/wave-4.svg": "/my-portfolio/static/media/wave-4.bf5e743e776d3f134052ece2f34268cb.svg",
     "static/media/wave-2.svg": "/my-portfolio/static/media/wave-2.4ee65d21303fd195134495cc47ad3941.svg",
-    "main.f156d5a3.css.map": "/my-portfolio/static/css/main.f156d5a3.css.map",
-    "main.de97d6f1.js.map": "/my-portfolio/static/js/main.de97d6f1.js.map",
+    "main.e2c264e0.css.map": "/my-portfolio/static/css/main.e2c264e0.css.map",
+    "main.19af45f6.js.map": "/my-portfolio/static/js/main.19af45f6.js.map",
     "787.128fc6e9.chunk.js.map": "/my-portfolio/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f156d5a3.css",
-    "static/js/main.de97d6f1.js"
+    "static/css/main.e2c264e0.css",
+    "static/js/main.19af45f6.js"
   ]
 }

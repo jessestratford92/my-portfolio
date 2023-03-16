@@ -1,8 +1,15 @@
-
 @font-face {
   font-family: "moldyen_boldbold";
   src: url("moldyen-webfont.woff2") format("woff2"),
     url("moldyen-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "the_neueblack";
+  src: url("theneue-black-webfont.woff2") format("woff2"),
+    url("theneue-black-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -14,8 +21,9 @@ body {
 }
 
 #backgroundImage {
-  background-image: URL("/src/assets/wallpaper_gradient.jpeg");
+  background-image: URL("/src/assets/backdrop_mono.jpeg");
   background-size: cover;
+  /* background-color: #000000; */
 }
 
 #menuButton {
@@ -90,46 +98,87 @@ body {
 }
 
 .song-title {
-  color: rgb(158, 158, 158);
-  font-family: "moldyen_boldbold", serif;
-  letter-spacing: 0.2rem;
+  background: linear-gradient(
+    270deg,
+    #4a515bff,
+    #16171bff,
+    #030305ff,
+    #dadde2ff,
+    #eeeff3ff
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-family: "the_neueblack", serif;
   text-align: center;
-  text-shadow: 0px 4px 8px rgba(255, 255, 255, 0.2);
 }
 
 .audio-player-header {
-  font-size: 10vmin;
-  color: rgb(158, 158, 158);
-  font-family: "moldyen_boldbold";
-  letter-spacing: 0.9rem;
-  text-shadow: 0px 4px 8px rgba(255, 255, 255, 0.2);
+  font-size: 8vmin;
+  font-family: "the_neueblack";
+  background: linear-gradient(
+    270deg,
+    #4a515bff,
+    #16171bff,
+    #030305ff,
+    #dadde2ff,
+    #eeeff3ff
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 .change-artwork {
-  color: rgb(90, 90, 90);
-  transition: color 1s;
-  font-family: "moldyen_boldbold", serif;
-  text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-  letter-spacing: 0.2rem;
+  background: linear-gradient(
+    270deg,
+    #4a515bff,
+    #16171bff,
+    #030305ff,
+    #dadde2ff,
+    #eeeff3ff
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: color 3s;
+  font-family: "the_neueblack", serif;
 }
 
 .change-artwork:hover {
-  color: rgb(255, 254, 254);
-  transition: color 1s;
-  font-family: "moldyen_boldbold", serif;
-  letter-spacing: 0.2rem;
-  text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(
+    270deg,
+    #4a515bff,
+    #16171bff,
+    #030305ff,
+    #dadde2ff,
+    #eeeff3ff
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: color 3s;
+  font-family: "the_neueblack", serif;
 }
 
 .artist-name {
-  color: rgb(158, 158, 158);
+  background: linear-gradient(
+    270deg,
+    #4a515bff,
+    #16171bff,
+    #030305ff,
+    #dadde2ff,
+    #eeeff3ff
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
   font-size: 15px;
   text-align: center;
-  font-family: "moldyen_boldbold", serif;
+  font-family: "the_neueblack", serif;
   letter-spacing: 0.2rem;
   align-items: center;
   align-content: center;
-  text-shadow: 0px 4px 8px rgba(255, 255, 255, 0.2);
 }
 
 /* The device with borders */
@@ -146,10 +195,6 @@ body {
   border-bottom-width: 60px;
   border-radius: 36px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.smartphone h3 {
-  right: 50%;
 }
 
 .smartphone:before {
@@ -270,30 +315,225 @@ header img:nth-child(4) {
 }
 header h1 {
   width: 100%;
-  font-family: "moldyen_boldbold";
-  letter-spacing: 0.9rem;
+  font-family: "the_neueblack";
+  background: linear-gradient(
+    270deg,
+    #4a515bff,
+    #16171bff,
+    #030305ff,
+    #dadde2ff,
+    #eeeff3ff
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
   position: absolute;
-  opacity: 10;
+  opacity: 30;
   transform: translate(-50%, -50%);
   left: 50%;
   top: 30%;
-  font-size: 15vmin;
+  font-size: 12vmin;
   text-align: center;
-  color: rgb(255, 255, 255);
-  animation: scrolling 5s linear infinite;
-  text-shadow: 0px 4px 8px rgba(255, 255, 255, 0.2);
 }
 
 header h2 {
   width: 100%;
-  font-family: "moldyen_boldbold";
-  letter-spacing: 0.2rem;
+  font-family: "the_neueblack";
+  background: linear-gradient(
+    270deg,
+    #4a515bff,
+    #16171bff,
+    #030305ff,
+    #dadde2ff,
+    #eeeff3ff
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
   position: absolute;
   transform: translate(-50%, -50%);
   left: 50%;
-  top: 60%;
-  font-size: 5vmin;
+  top: 50%;
+  font-size: 3vmin;
   text-align: center;
-  color: rgb(255, 255, 255);
-  text-shadow: 0px 4px 8px rgba(255, 255, 255, 0.2);
+}
+
+.aboutMe h1 {
+  font-family: "the_neueblack";
+  background: linear-gradient(
+    270deg,
+    #4a515bff,
+    #16171bff,
+    #030305ff,
+    #dadde2ff,
+    #eeeff3ff
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 8vmin;
+  text-align: center;
+  margin-top: 10%;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.aboutMe ul {
+  font-family: "the_neueblack";
+  font-size: 2vmin;
+  letter-spacing: 0.2rem;
+  color: rgb(172, 172, 172);
+  margin-left: 20%;
+  margin-right: 20%;
+  padding-bottom: 20%;
+}
+
+.aboutMe a {
+  background-color: rgb(255, 255, 255);
+  border-radius: 5%;
+  transition: background-color 1s;
+  border: none;
+  color: rgb(95, 95, 95);
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  margin-left: 280px;
+  position: relative;
+  bottom: 20%;
+}
+
+@media screen and (max-width: 767px) {
+  /* This applies styles to screens with a maximum width of 767px */
+
+  #backgroundImage {
+    background-image: URL("/src/assets/backdrop_mono.jpeg");
+    background-size: cover;
+  }
+
+  html,
+  body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  header h1 {
+    width: 100%;
+    font-family: "the_neueblack";
+    background: linear-gradient(
+      270deg,
+      #4a515bff,
+      #16171bff,
+      #030305ff,
+      #dadde2ff,
+      #eeeff3ff
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 30%;
+    font-size: 5vmin;
+    text-align: center;
+  }
+
+  header h2 {
+    width: 100%;
+    font-family: "the_neueblack";
+    background: linear-gradient(
+      270deg,
+      #4a515bff,
+      #16171bff,
+      #030305ff,
+      #dadde2ff,
+      #eeeff3ff
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 60%;
+    font-size: 4vmin;
+    text-align: center;
+  }
+
+  /* The device with borders */
+  .smartphone {
+    margin: 0;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    position: relative;
+    left: 0%;
+    width: 360px;
+    height: 640px;
+    border: 16px rgb(255, 255, 255) solid;
+    border-top-width: 60px;
+    border-bottom-width: 60px;
+    border-radius: 36px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .component-container {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .audio-player-header {
+    font-size: 6vmin;
+    font-family: "the_neueblack";
+    background: linear-gradient(
+      270deg,
+      #4a515bff,
+      #16171bff,
+      #030305ff,
+      #dadde2ff,
+      #eeeff3ff
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-top: 5%;
+  }
+
+  .aboutMeContainer {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+.aboutMe h1 {
+  display: grid;
+  justify-items: center;
+  font-family: "the_neueblack";
+  background: linear-gradient(
+    270deg,
+    #4a515bff,
+    #16171bff,
+    #030305ff,
+    #dadde2ff,
+    #eeeff3ff
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 6vmin;
+  text-align: center;
+}
+
+.aboutMe p {
+  display: grid;
+  justify-items: center;
+  text-align: center;
+  font-family: "moldyen_boldbold";
+  font-size: 1.5vmin;
+  letter-spacing: 0.2rem;
+  color: #030305ff;
 }

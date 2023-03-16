@@ -2,6 +2,8 @@ import React, { useEffect, useRef, useState } from "react";
 import AudioPlayer from "./audioPlayer";
 import "./styles/index.css";
 import Audioheader from "./audioHeader";
+import AboutMe from "./aboutMe";
+import { ScrollReveal } from "reveal-on-scroll-react";
 
 const wave_1 = require("./assets/SVG/wave-1.svg");
 const wave_2 = require("./assets/SVG/wave-2.svg");
@@ -18,8 +20,8 @@ const Portfolio: React.FC = () => {
         <img src={wave_3.default} />
         <img src={wave_4.default} />
         <img src={wave_5.default} id="shape" />
-        <h1>JESSE:STRATFORD</h1>
-        <h2>creative software engineer.</h2>
+        <ScrollReveal.h1>Jesse Stratford</ScrollReveal.h1>
+        <ScrollReveal.h2>Creative Software Engineer</ScrollReveal.h2>
       </header>
       {/* <div>
         <a
@@ -31,7 +33,10 @@ const Portfolio: React.FC = () => {
       </div> */}
       <div className="component-container">
         <AudioPlayer />
-        <Audioheader title={"Audio Player."} />
+        <Audioheader title={"Audio Player"} />
+      </div>
+      <div className="aboutMeContainer">
+        <AboutMe />
       </div>
     </div>
   );

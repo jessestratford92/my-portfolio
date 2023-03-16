@@ -1,4 +1,5 @@
 import React from "react";
+import { ScrollReveal } from "reveal-on-scroll-react";
 
 interface Props {
   title: string;
@@ -7,7 +8,7 @@ interface Props {
 const Audioheader: React.FC<Props> = ({ title }) => {
   return (
     <div>
-      <h1 className="audio-player-header">{title}</h1>
+      <ScrollReveal.h1 className="audio-player-header">{title}</ScrollReveal.h1>
     </div>
   );
 };

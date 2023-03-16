@@ -2,9 +2,11 @@ import React, { useState } from "react";
 import ReactAudioPlayer from "react-audio-player";
 import Sphere from "./sphere";
 import Sphere2 from "./sphere2";
+import { ScrollReveal } from "reveal-on-scroll-react";
 
 // const Music_1 = require("./assets/music/NilsFrahm_Says.mp3");
-const Music_2 = require("./assets/music/Rival_Consoles _Untravel.mp3");
+// const Music_2 = require("./assets/music/Rival_Consoles _Untravel.mp3");
+const Music_3 = require("./assets/music/The_Veil_LANCE.wav");
 
 function handlePlay() {
   console.log("The song is playing");
@@ -34,12 +36,12 @@ const AudioPlayer: React.FC = () => {
           )}
         </div>
         <div className="song-info">
-          <h1 className="song-title">Rival Consols</h1>
-          <h1 className="artist-name">Untravel</h1>
+          <ScrollReveal.h1 className="song-title">LANCE</ScrollReveal.h1>
+          <ScrollReveal.h1 className="artist-name">The Veil</ScrollReveal.h1>
         </div>
         <ReactAudioPlayer
           className="audio-player-actual"
-          src={Music_2}
+          src={Music_3}
           autoPlay
           controls
           onPlay={handlePlay}

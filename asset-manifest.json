@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/my-portfolio/static/css/main.e2c264e0.css",
-    "main.js": "/my-portfolio/static/js/main.19af45f6.js",
+    "main.css": "/my-portfolio/static/css/main.870b0b51.css",
+    "main.js": "/my-portfolio/static/js/main.cc23e102.js",
     "static/js/787.128fc6e9.chunk.js": "/my-portfolio/static/js/787.128fc6e9.chunk.js",
     "static/media/The_Veil_LANCE.wav": "/my-portfolio/static/media/The_Veil_LANCE.4dca1ea6e27ec012aefc.wav",
     "static/media/NormalMap.png": "/my-portfolio/static/media/NormalMap.a3bfa5bb5c0bba92ac45.png",
@@ -17,12 +17,12 @@
     "static/media/wave-3.svg": "/my-portfolio/static/media/wave-3.fde7a620e85891fe26c6c118b9971057.svg",
     "static/media/wave-4.svg": "/my-portfolio/static/media/wave-4.bf5e743e776d3f134052ece2f34268cb.svg",
     "static/media/wave-2.svg": "/my-portfolio/static/media/wave-2.4ee65d21303fd195134495cc47ad3941.svg",
-    "main.e2c264e0.css.map": "/my-portfolio/static/css/main.e2c264e0.css.map",
-    "main.19af45f6.js.map": "/my-portfolio/static/js/main.19af45f6.js.map",
+    "main.870b0b51.css.map": "/my-portfolio/static/css/main.870b0b51.css.map",
+    "main.cc23e102.js.map": "/my-portfolio/static/js/main.cc23e102.js.map",
     "787.128fc6e9.chunk.js.map": "/my-portfolio/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e2c264e0.css",
-    "static/js/main.19af45f6.js"
+    "static/css/main.870b0b51.css",
+    "static/js/main.cc23e102.js"
   ]
 }

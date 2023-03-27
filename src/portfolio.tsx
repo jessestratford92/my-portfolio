@@ -20,17 +20,20 @@ const Portfolio: React.FC = () => {
         <img src={wave_3.default} />
         <img src={wave_4.default} />
         <img src={wave_5.default} id="shape" />
-        <ScrollReveal.h1>Jesse Stratford</ScrollReveal.h1>
-        <ScrollReveal.h2>Creative Software Engineer</ScrollReveal.h2>
-      </header>
-      {/* <div>
+        <ScrollReveal.h1 animation="fade-in" duration={10}>
+          Jesse Stratford
+        </ScrollReveal.h1>
+        <ScrollReveal.h2 animation="fade-in" duration={10}>
+          Creative Software Engineer
+        </ScrollReveal.h2>
         <a
+          className="top-left-text"
           href="https://docs.google.com/document/d/e/2PACX-1vSUMn3KuY2ygVrWbwDamJpvU581E3UUv3t-1wySa502mu-PlMbSMquk5yfRN8-QpZ7Ini3xZOiw6Vdt/pub"
           target="_blank"
         >
-          View CV PDF
+          CV
         </a>
-      </div> */}
+      </header>
       <div className="component-container">
         <AudioPlayer />
         <Audioheader title={"Audio Player"} />

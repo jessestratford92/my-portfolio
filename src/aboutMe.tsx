@@ -4,8 +4,10 @@ import { ScrollReveal } from "reveal-on-scroll-react";
 const AboutMe: React.FC = () => {
   return (
     <div className="aboutMe">
-      <ScrollReveal.h1>About Me</ScrollReveal.h1>
-      <ScrollReveal.ul>
+      <ScrollReveal.h1 animation="fade-in" duration={5}>
+        About Me
+      </ScrollReveal.h1>
+      <ScrollReveal.ul animation="fade-in" duration={6}>
         <p>
           As a Software Engineer, I have come to understand the true potential
           of my technical abilities, as well as my interpersonal skills and

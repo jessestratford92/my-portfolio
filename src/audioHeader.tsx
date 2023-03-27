@@ -8,7 +8,13 @@ interface Props {
 const Audioheader: React.FC<Props> = ({ title }) => {
   return (
     <div>
-      <ScrollReveal.h1 className="audio-player-header">{title}</ScrollReveal.h1>
+      <ScrollReveal.h1
+        animation="fade-in"
+        duration={5}
+        className="audio-player-header"
+      >
+        {title}
+      </ScrollReveal.h1>
     </div>
   );
 };

@@ -22,8 +22,44 @@ body {
 
 #backgroundImage {
   background-image: URL("/src/assets/backdrop_mono.jpeg");
+  /* background-image: URL("/src/assets/heroImage.jpg"); */
   background-size: cover;
+  /* height: 10%; */
+  /* height: fit-content; */
   /* background-color: #000000; */
+}
+.top-left-text {
+  background-color: aliceblue;
+  border-radius: 5%;
+  border-radius: 4px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  width: 5%;
+  left: 5%;
+  top: 5%;
+  padding: 10px 20px;
+  font-family: "the_neueblack";
+  background: linear-gradient(
+    270deg,
+    #4a515bff,
+    rgb(84, 84, 84),
+    rgb(177, 177, 177),
+    #dadde2ff,
+    #eeeff3ff
+  );
+
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  font-size: 3vmin;
+  text-align: center;
+}
+
+.top-left-text:hover {
+  background-color: rgb(206, 206, 206);
+  transition: background-color 1s;
+  box-shadow: 0px 4px 8px rgba(93, 93, 93, 0.2);
 }
 
 #menuButton {
@@ -101,8 +137,8 @@ body {
   background: linear-gradient(
     270deg,
     #4a515bff,
-    #16171bff,
-    #030305ff,
+    rgb(130, 130, 130),
+    rgb(78, 78, 78),
     #dadde2ff,
     #eeeff3ff
   );
@@ -114,7 +150,7 @@ body {
 }
 
 .audio-player-header {
-  font-size: 8vmin;
+  font-size: 6vmin;
   font-family: "the_neueblack";
   background: linear-gradient(
     270deg,
@@ -318,11 +354,11 @@ header h1 {
   font-family: "the_neueblack";
   background: linear-gradient(
     270deg,
-    #4a515bff,
-    #16171bff,
-    #030305ff,
+    #eeeff3ff,
     #dadde2ff,
-    #eeeff3ff
+    #030305ff,
+    rgb(46, 46, 48),
+    #4a515bff
   );
   background-clip: text;
   -webkit-background-clip: text;
@@ -374,15 +410,15 @@ header h2 {
   font-size: 8vmin;
   text-align: center;
   margin-top: 10%;
-  margin-left: 20%;
-  margin-right: 20%;
+  /* margin-left: 20%;
+  margin-right: 20%; */
 }
 
 .aboutMe ul {
   font-family: "the_neueblack";
   font-size: 2vmin;
-  letter-spacing: 0.2rem;
   color: rgb(172, 172, 172);
+  padding: 0%;
   margin-left: 20%;
   margin-right: 20%;
   padding-bottom: 20%;
@@ -416,6 +452,40 @@ header h2 {
   body {
     max-width: 100%;
     overflow-x: hidden;
+  }
+
+  .top-left-text {
+    background-color: rgb(255, 255, 255);
+    border-radius: 5%;
+    border-radius: 4px;
+    box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.2);
+    width: 5%;
+    left: 10%;
+    top: 4%;
+    padding: 10px 20px;
+    font-family: "the_neueblack";
+    background: linear-gradient(
+      270deg,
+      #4a515bff,
+      rgb(84, 84, 84),
+      rgb(177, 177, 177),
+      #dadde2ff,
+      #eeeff3ff
+    );
+
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    font-size: 3vmin;
+    text-align: center;
+  }
+
+  .top-left-text:hover {
+    background-color: rgb(206, 206, 206);
+    transition: background-color 1s;
+    box-shadow: 0px 4px 8px rgba(93, 93, 93, 0.2);
   }
 
   header h1 {
@@ -499,14 +569,14 @@ header h2 {
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
-    margin-top: 5%;
+    margin-top: 20%;
   }
 
   .aboutMeContainer {
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
-    justify-content: space-around;
+    /* justify-content: space-around; */
   }
 }
 .aboutMe h1 {
@@ -532,8 +602,7 @@ header h2 {
   display: grid;
   justify-items: center;
   text-align: center;
-  font-family: "moldyen_boldbold";
-  font-size: 1.5vmin;
-  letter-spacing: 0.2rem;
+  font-family: "the_neueblack";
+  font-size: 3vmin;
   color: #030305ff;
 }

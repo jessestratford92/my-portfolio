@@ -36,8 +36,20 @@ const AudioPlayer: React.FC = () => {
           )}
         </div>
         <div className="song-info">
-          <ScrollReveal.h1 className="song-title">LANCE</ScrollReveal.h1>
-          <ScrollReveal.h1 className="artist-name">The Veil</ScrollReveal.h1>
+          <ScrollReveal.h1
+            animation="fade-in"
+            duration={4}
+            className="song-title"
+          >
+            LANCE
+          </ScrollReveal.h1>
+          <ScrollReveal.h1
+            animation="fade-in"
+            duration={6}
+            className="artist-name"
+          >
+            The Veil
+          </ScrollReveal.h1>
         </div>
         <ReactAudioPlayer
           className="audio-player-actual"

@@ -361,7 +361,6 @@ header h1 {
     #4a515bff
   );
   background-clip: text;
-  -webkit-background-clip: text;
   color: transparent;
   position: absolute;
   opacity: 30;
@@ -370,6 +369,7 @@ header h1 {
   top: 30%;
   font-size: 12vmin;
   text-align: center;
+  background-position: 0 0;
 }
 
 header h2 {
@@ -421,7 +421,7 @@ header h2 {
   padding: 0%;
   margin-left: 20%;
   margin-right: 20%;
-  padding-bottom: 20%;
+  padding-bottom: 10%;
 }
 
 .aboutMe a {
@@ -437,7 +437,103 @@ header h2 {
   display: flex;
   margin-left: 280px;
   position: relative;
-  bottom: 20%;
+  /* bottom: 20%; */
+}
+
+/* ContactMe CSS styling  */
+
+.ContactMeContainer {
+  max-width: 600px;
+  margin: 0 auto;
+  background-image: URL("/src/assets/backdrop_mono.jpeg");
+  padding: 20px;
+  margin-bottom: 10%;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.ContactMeHeader {
+  display: gird;
+  align-items: center;
+}
+
+.ContactMeHeader h1 {
+  font-family: "the_neueblack";
+  background: linear-gradient(
+    270deg,
+    #eeeff3ff,
+    #dadde2ff,
+    #030305ff,
+    #16171bff,
+    #4a515bff
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 6vmin;
+  text-align: center;
+}
+
+.form-wrapper label {
+  display: grid;
+  justify-content: center;
+  font-family: "the_neueblack";
+  font-size: 3vmin;
+  color: rgb(255, 255, 255);
+  padding: 0%;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.form-wrapper form {
+  display: grid;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.form-wrapper input,
+.form-wrapper textarea {
+  background-color: rgb(255, 255, 255);
+  border-radius: 5%;
+  border: none;
+  display: block;
+  color: rgb(95, 95, 95);
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.form-wrapper textarea:focus {
+  border-color: grey;
+}
+
+.form-wrapper input:focus {
+  border-color: grey;
+}
+
+.form-wrapper button {
+  padding: 10px 20px;
+  font-family: "the_neueblack";
+  font-size: 2vmin;
+  background: linear-gradient(
+    270deg,
+    #4a515bff,
+    #16171bff,
+    #030305ff,
+    #dadde2ff,
+    #eeeff3ff
+  );
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 767px) {

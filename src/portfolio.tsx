@@ -4,6 +4,7 @@ import "./styles/index.css";
 import Audioheader from "./audioHeader";
 import AboutMe from "./aboutMe";
 import { ScrollReveal } from "reveal-on-scroll-react";
+import ContactMe from "./contactMe";
 
 const wave_1 = require("./assets/SVG/wave-1.svg");
 const wave_2 = require("./assets/SVG/wave-2.svg");
@@ -41,6 +42,9 @@ const Portfolio: React.FC = () => {
       <div className="aboutMeContainer">
         <AboutMe />
       </div>
+      <ScrollReveal.div animation="fade-in" duration={3}>
+        <ContactMe />
+      </ScrollReveal.div>
     </div>
   );
 };

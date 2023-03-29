@@ -7,7 +7,7 @@ const AboutMe: React.FC = () => {
       <ScrollReveal.h1 animation="fade-in" duration={5}>
         About Me
       </ScrollReveal.h1>
-      <ScrollReveal.ul animation="fade-in" duration={6}>
+      <ScrollReveal.ul animation="fade-in" duration={3}>
         <p>
           As a Software Engineer, I have come to understand the true potential
           of my technical abilities, as well as my interpersonal skills and

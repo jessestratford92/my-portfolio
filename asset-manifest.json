@@ -1,9 +1,10 @@
 {
   "files": {
-    "main.css": "/my-portfolio/static/css/main.870b0b51.css",
-    "main.js": "/my-portfolio/static/js/main.cc23e102.js",
+    "main.css": "/my-portfolio/static/css/main.dc31b281.css",
+    "main.js": "/my-portfolio/static/js/main.24881866.js",
     "static/js/787.128fc6e9.chunk.js": "/my-portfolio/static/js/787.128fc6e9.chunk.js",
     "static/media/The_Veil_LANCE.wav": "/my-portfolio/static/media/The_Veil_LANCE.4dca1ea6e27ec012aefc.wav",
+    "static/media/heroImage3.jpg": "/my-portfolio/static/media/heroImage3.6fb449f154ec082b5d1d.jpg",
     "static/media/NormalMap.png": "/my-portfolio/static/media/NormalMap.a3bfa5bb5c0bba92ac45.png",
     "static/media/Stylized_Fur_002_normal.jpg": "/my-portfolio/static/media/Stylized_Fur_002_normal.8b2d574fb3a060020afa.jpg",
     "static/media/moldyen-webfont.woff": "/my-portfolio/static/media/moldyen-webfont.c4e903c7ac71b64dfac6.woff",
@@ -17,12 +18,12 @@
     "static/media/wave-3.svg": "/my-portfolio/static/media/wave-3.fde7a620e85891fe26c6c118b9971057.svg",
     "static/media/wave-4.svg": "/my-portfolio/static/media/wave-4.bf5e743e776d3f134052ece2f34268cb.svg",
     "static/media/wave-2.svg": "/my-portfolio/static/media/wave-2.4ee65d21303fd195134495cc47ad3941.svg",
-    "main.870b0b51.css.map": "/my-portfolio/static/css/main.870b0b51.css.map",
-    "main.cc23e102.js.map": "/my-portfolio/static/js/main.cc23e102.js.map",
+    "main.dc31b281.css.map": "/my-portfolio/static/css/main.dc31b281.css.map",
+    "main.24881866.js.map": "/my-portfolio/static/js/main.24881866.js.map",
     "787.128fc6e9.chunk.js.map": "/my-portfolio/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.870b0b51.css",
-    "static/js/main.cc23e102.js"
+    "static/css/main.dc31b281.css",
+    "static/js/main.24881866.js"
   ]
 }
